@@ -1,0 +1,69 @@
+body{
+    font-family: 'roboto', sans-serif;
+}
+
+aside{
+    height: 100vh;
+}
+
+#main{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+aside .nav::before, aside .nav::after, .sosmed .list-group::before{
+    content: '';
+    width: 1px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    left: 23px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .nav-link:hover{
+    background-color: rgb(255, 255, 255) !important;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s all ease;
+}
+
+.accordion{
+    display: flex;
+    align-items: center;
+}
+
+#headingOne.card-header{
+    background-color: #8e44ad;
+}
+
+#headingTwo.card-header{
+    background-color: #f39c12;
+}
+
+#headingThree.card-header{
+    background-color: #f1c40f;
+}
+
+.sosmed{
+    bottom: 20px;
+    /* height: 100vh; */
+}
+
+.list-group-item{
+   border: none; 
+}
+
+footer{
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.15);
+}
+
+footer .nav-link{
+    padding-left: 0;
+}
+
+#triggerCollapse{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
